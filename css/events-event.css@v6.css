@@ -1,0 +1,666 @@
+#container {
+	overflow: hidden;
+}
+
+.page-inside {
+	max-width: 1580px;
+}
+
+.page-inside, #bottom-inside {
+	transition: transform .7s cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+body.transition-from-prev-event .page-inside,
+body.transition-from-next-event .page-inside,
+body.transition-from-prev-event #bottom-inside,
+body.transition-from-next-event #bottom-inside {
+	transition: transform .3s, opacity .3s;
+	transform: translateX(-30px);
+	opacity: 0;	
+}
+
+body.transition-from-next-event .page-inside,
+body.transition-from-next-event #bottom-inside {
+	transform: translateX(30px);
+}
+
+body.transition-from-prev-event.fade-in .page-inside,
+body.transition-from-next-event.fade-in .page-inside,
+body.transition-from-prev-event.fade-in #bottom-inside,
+body.transition-from-next-event.fade-in #bottom-inside {
+	opacity: 1;
+	transform: translateX(0px);
+}
+
+body.transition-next-event .page-inside, 
+body.transition-prev-event .page-inside,
+body.transition-next-event #bottom-inside, 
+body.transition-prev-event #bottom-inside {
+	transition: transform .3s .1s, opacity .3s;
+	transform: translateX(-30px);
+	opacity: 0;
+}
+
+body.transition-prev-event .page-inside,
+body.transition-prev-event #bottom-inside {
+	transform: translateX(30px);
+}
+
+body.transition-from-prev-event .page,
+body.transition-from-next-event .page,
+body.transition-from-prev-event .page-right-button,
+body.transition-from-next-event .page-right-button,
+body.transition-from-prev-event .page-left-button,
+body.transition-from-next-event .page-left-button {
+	opacity: 1;	
+}
+
+body.transition-prev-event.page-fade-in #cursor,
+body.transition-next-event.page-fade-in #cursor { 
+	width: 0px !important; 
+	height: 0px !important; 
+}
+
+#events-event-previous {
+	bottom: 43px;
+}
+
+#events-event-next {
+	bottom: 143px;
+}
+
+#events-event-back {
+	margin-top: 258px;
+}
+
+.events-event-part {
+    border-bottom: 1px solid #CDCBCA;
+}
+
+.page-top {
+
+}
+
+	.page-top-title {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.events-event-top-image {
+		position: relative;
+		margin: 87px -57px -66px;
+	}
+
+		.events-event-top-image-inside {
+			padding-top: 66.334%;
+			background-size: cover;
+		}
+
+		.events-event-top-video-inside {
+			padding-top: 56.25%;
+		}
+
+			.events-event-top-video-inside iframe {
+				position: absolute;
+				top: 0px;
+			}
+
+	
+#events-event-infos {
+	overflow: hidden;
+	margin-top: 65px;
+	padding-bottom: 77px;
+}
+
+	.events-event-infos-each {
+		float: left;
+	}
+
+	#events-event-registration1 {
+		width: 35%;
+		max-width: 367px;
+	}
+		
+		.page-text-header {
+			margin-bottom: 0px;
+			font-weight: 400;
+		}
+
+		#events-event-registration .page-text-header {
+			margin: 52px 0px;
+		}
+
+		.page-text {
+			line-height: 135%;
+		}
+
+		#events-event-infos .page-text {
+			margin-top: 22px;
+		}
+
+#events-event-registration {
+	overflow: hidden;
+}
+
+	.events-event-infos-each {
+		float: left;
+	}
+
+	#events-event-registration3 {
+		float: right;
+		padding-left: 10px;
+		margin-top: 52px;
+
+		font-family: 'Catamaran', sans-serif;
+		font-weight: 700;
+		font-size: 18px;
+	}
+
+		#events-event-registration3-inside {
+			margin-left: 20px;
+			margin-top: -21px;
+			position: relative;
+			float: right;
+			width: 66px;
+			height: 66px;
+			border: 1px solid rgba(151,151,151,.38);
+			border-radius: 50%;
+		}
+
+			#events-event-registration3-inside-inside {
+				position: absolute;
+				top: 28px;
+				left: 26px;
+				width: 10px;
+				height: 10px;
+				transform: rotate(45deg);
+				border: 2px solid #1A1818;
+				border-left: none;
+				border-bottom: none;
+			}
+
+#events-event-release {
+	margin: 68px 0px 0px;
+	border-bottom: none;
+}
+
+	#events-event-release-type {
+		display: none;
+	}
+
+	#events-event-release .page-text,
+	#events-event-content .page-text {
+		line-height: 155%;
+	}
+
+	#events-event-release .page-text,
+	#events-event-content .page-text,
+	#events-event-content .events-event-top-image,
+	.events-event-img1, 
+	.events-event-img2 {
+		margin-bottom: 100px;
+	}
+
+	.events-event-img1.page-inside.fullscreen {
+		padding: initial;
+		max-width: 100%;
+	}
+
+	#events-event-img2-mobile {
+		display: none;
+	}
+
+		.events-event-img1-1, .events-event-img2-1, .events-event-img2-2,
+		#events-event-img2-1-mobile, #events-event-img2-2-mobile {
+			height: 100%;
+			background-size: 100% auto;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		.events-event-img2-1, .events-event-img2-2 {
+			float: left;
+			width: calc(50% - 40px);
+		}
+
+		.events-event-img2-1 {
+			margin-right: 40px;
+		}
+
+		.events-event-img2-2 {
+			margin-left: 40px;
+		}
+
+		.events-event-img2-1-mobile,
+		.events-event-img2-2-mobile {
+			display: none;
+		}
+
+
+#events-event-content {
+	border-bottom: none;
+}
+
+	#events-event-content .events-event-img2 {
+		display: flex;
+	}
+
+#events-event-margin {
+	height: 50px;
+}
+
+#events-event-artists,
+#events-event-materials {
+	margin-bottom: 147px;
+}
+
+	#events-event-artists .page-text-header,
+	#events-event-materials .page-text-header {
+		margin-top: 0px;
+		margin-bottom: 0px;
+		padding-bottom: 55px;
+	}
+
+	.events-event-artists-each {
+		padding-top: 46px;
+		padding-bottom: 46px;
+		overflow: hidden;
+	}
+
+		.events-event-artists-each-name {
+			float: left;
+
+			font-size: 50px;
+		}
+
+		.events-event-artists-each-city {
+			float: right;
+			margin-top: 31px;
+			width: 186px;
+
+			font-family: 'Catamaran', sans-serif;
+			font-weight: 300;
+			font-size: 18px;
+		}
+
+
+@media screen and (max-width: 1600px) {
+
+	.events-event-img2-1, .events-event-img2-2 {
+		width: calc(50% - 20px);
+	}
+
+	.events-event-img2-1 {
+		margin-right: 20px;
+	}
+
+	.events-event-img2-2 {
+		margin-left: 20px;
+	}
+}
+
+
+@media screen and (max-width: 1439px) {
+
+	.events-event-top-image {
+		margin-top: 80px;
+		margin-left: -42px;
+    	margin-right: -42px;
+	}
+
+	#events-event-release .page-text,
+	#events-event-content .page-text,
+	#events-event-content .events-event-top-image,
+	.events-event-img1, 
+	.events-event-img2 {
+		margin-bottom: 90px;
+	}
+
+	#events-event-artists,
+	#events-event-materials {
+		margin-bottom: 125px;
+	}
+
+		#events-event-artists .page-text-header,
+		#events-event-materials .page-text-header {
+			padding-bottom: 42px;
+		}
+
+		.events-event-artists-each {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+
+			#events-event-infos .page-text {
+				margin-top: 20px;
+			}
+
+			.events-event-artists-each-city {
+				margin-top: 19px;
+			}
+}
+
+
+@media screen and (max-width: 1279px) {
+
+	.page-top.events-event-part {
+		border-bottom: none;
+	}
+
+	.events-event-top-image {
+		margin-top: 72px;
+		margin-left: -70px;
+    	margin-right: -70px;
+	}
+
+	#events-event-registration1 {
+		width: 40%;
+	}
+
+	#events-event-release .page-text,
+	#events-event-content .page-text,
+	#events-event-content .events-event-top-image,
+	.events-event-img1, 
+	.events-event-img2 {
+		margin-bottom: 80px;
+	}
+
+	#events-event-infos .page-text {
+		margin-top: 18px;
+	}
+
+	#events-event-artists,
+	#events-event-materials {
+		margin-bottom: 105px;
+	}
+
+		#events-event-artists .page-text-header,
+		#events-event-materials .page-text-header {
+			padding-bottom: 34px;
+		}
+
+		.events-event-artists-each-name {
+			font-size: 45px;
+		}
+
+		.events-event-artists-each-city {
+			margin-top: 16px;
+		}
+}
+
+
+@media screen and (max-width: 1024px) {
+
+	.events-event-top-image {
+		margin-top: 65px;
+		margin-left: -45px;
+    	margin-right: -45px;
+	}
+
+	#events-event-registration1 {
+		width: 45%;
+	}
+
+	#events-event-infos .page-text {
+		margin-top: 16px;
+	}
+
+	#events-event-release .page-text,
+	#events-event-content .page-text,
+	#events-event-content .events-event-top-image,
+	.events-event-img1, 
+	.events-event-img2,
+	#events-event-img2-mobile {
+		margin-bottom: 73px;
+	}
+
+	#events-event-release-type {
+		display: block;
+		margin-bottom: 42px;
+
+		font-family: 'Catamaran', sans-serif;
+		font-weight: 300;
+		font-size: 18px;
+	}
+
+	#events-event-artists,
+	#events-event-materials {
+		margin-bottom: 90px;
+	}
+
+		#events-event-artists .page-text-header,
+		#events-event-materials .page-text-header {
+			padding-bottom: 34px;
+		}
+
+		.events-event-artists-each-name {
+			font-size: 40px;
+		}
+
+		.events-event-artists-each-city {
+			margin-top: 14px;
+			font-size: 17px;
+		}
+}
+
+@media screen and (max-width: 896px) {
+
+	#events-event-registration2 {
+		display: none;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+
+	#events-event-infos {
+		padding-bottom: 67px;
+	}
+
+		.page-top-title {
+			font-size: 67px !important;
+		}
+
+			.page-top-title-inside {
+				padding: 0px 35px;
+			}
+
+		.events-event-top-image {
+			margin-top: 60px;
+			margin-left: -30px;
+    		margin-right: -30px;
+		}
+
+		#events-event-registration1 {
+			display: none;
+		}
+
+		#events-event-registration3 {
+			float: left;
+			padding-left: 0px;
+			margin-bottom: 32px;
+		}
+
+		.page-text-header {
+			font-weight: 700;
+		}
+
+		#events-event-infos .page-text {
+			margin-top: 14px;
+		}
+
+		.page-text,
+		#events-event-release .page-text,
+		#events-event-content .page-text {
+			line-height: 125%;
+		}
+
+	#events-event-artists {
+		margin-bottom: 0px;
+	}
+
+	#events-event-materials {
+		margin-bottom: 77px;
+	}
+
+		#events-event-artists .page-text-header,
+		#events-event-materials .page-text-header {
+			padding-bottom: 28px;
+		}
+
+		.events-event-artists-each-name {
+			font-size: 32px;
+		}
+
+		.events-event-artists-each-city {
+			margin-top: 14px;
+		}
+}
+
+
+@media screen and (max-width: 656px) {
+
+	.events-event-artists-each-name,
+	.events-event-artists-each-city {
+		float: none;
+		width: auto;
+	}
+
+	.events-event-artists-each-city {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+}
+
+
+@media screen and (max-width: 543px) {
+
+	#events-event-infos {
+		margin-top: 0px;
+	}
+
+		.page-top-title {
+			padding-top: 0px;
+			font-size: 55px !important;
+		}
+
+			.page-top-title-inside {
+				padding: 0px;
+			}
+
+		#page-top-mobile, .events-event-top-image {
+			margin-left: -45px;
+			margin-right: -45px;
+			margin-bottom: 0px;
+		}
+
+		.events-event-top-image {
+			margin-top: 54px;
+		}
+
+		#events-event-infos .page-text {
+			margin-top: 12px;
+		}
+
+		.events-event-img2 {
+			display: none;
+		}
+
+		#events-event-img2-mobile {
+			display: block;
+		}
+
+			#events-event-img2-2-mobile {
+				margin-top: 20px;
+			}
+
+		#events-event-registration3 {
+			width: 100%;
+			margin-top: 40px;
+			margin-bottom: 22px;
+
+			font-size: 16px;
+		}
+
+			#events-event-registration3-inside {
+				margin-top: -17px;
+				width: 54px;
+				height: 54px;
+				background-color: #988F8A;
+				border: none;
+			}
+
+				#events-event-registration3-inside-inside {
+					top: 22px;
+					left: 22px;
+					border-color: #fff;
+				}
+
+		#events-event-release-type {
+			font-size: 16px;
+			margin-bottom: 28px;
+		}
+
+
+	#events-event-materials {
+		margin-bottom: 65px;
+	}
+
+		#events-event-artists .page-text-header,
+		#events-event-materials .page-text-header {
+			padding-bottom: 20px;
+		}
+
+		.events-event-artists-each {
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+
+			.events-event-artists-each-name {
+				font-size: 28px;
+			}
+
+			.events-event-artists-each-city {
+				font-size: 16px;
+			}
+
+	#events-event-content .page-inside.events-event-img1 {
+		padding: initial;
+	}
+
+	#events-event-content .events-event-img2 {
+		flex-flow: column;
+	}
+
+		#events-event-content .events-event-img2-1,
+		#events-event-content .events-event-img2-2 {
+			display: none;
+		}
+
+		#events-event-content .events-event-img2-1-mobile,
+		#events-event-content .events-event-img2-2-mobile {
+			display: flex;
+			width: 100%;
+			background-size: 100% auto;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		#events-event-content .events-event-img2-2-mobile {
+			margin-top: 20px;
+		}
+}
+
+@media screen and (max-height: 560px) {
+
+	#artists-work-back {
+		display: none;
+	}
+}
+
+@media screen and (max-height: 300px) {
+
+	#artists-work-previous, #artists-work-next {
+		display: none;
+	}
+}

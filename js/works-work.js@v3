@@ -1,0 +1,1 @@
+var _0x7c36=["init","ready","href","/works","attr","#page-top-mobile a, #page-left a"];$(document)[_0x7c36[1]](function(){const pageSub= new PageSub();pageSub[_0x7c36[0]]()});PageSub= function(){const self=this;this[_0x7c36[0]]= function(){$(_0x7c36[5])[_0x7c36[4]](_0x7c36[2],_0x7c36[3])}}
